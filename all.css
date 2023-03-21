@@ -111,16 +111,16 @@ header .navbar i:hover{
 /*share*/
 .share{
     position: fixed;
-    width: 50rem;
-    height: 30rem;
+    width: 500px;
+    height: 300px;
     top: 50%;
     left: 50%;
-    margin-top: -15rem;
-    margin-left: -25rem;
+    margin-top: -150px;
+    margin-left: -250px;
     z-index: 10000;
     background-color: #ffffff;
-    border-radius: 2rem;
-    padding: 1rem;
+    border-radius: 30px;
+    padding: 10px;
     display: none;
     justify-content: center;
     align-items: center;
@@ -137,40 +137,40 @@ header .navbar i:hover{
   
   .share h4{
     color: var(--green);
-    font-size: 2.5rem;
+    font-size: 25px;
     font-weight: bolder;
-    border-bottom: var(--light-green) .1rem solid;
-    padding: 1rem;
+    border-bottom: var(--blue) 1px solid;
+    padding-bottom: 10px;
   }
   
   .share .social-media-button i{
-    font-size: 5rem;
-    color: var(--green);
-    margin: 1rem;
-    margin-bottom: 2rem;
+    font-size: 50px;
+    color: var(--blue);
+    margin: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
   }
   
   .share .social-media-button i:hover{
-    color: var(--light-green);
+    color: var(--orange);
     transform: scale(1.2);
   }
   
   .share .share-container .link-box{
     position: relative;
     width: 100%;
-    height: 5rem;
-    border-radius: 2rem;
-    border: var(--brown) solid .1rem;
+    height: 50px;
+    border-radius: 20px;
+    border: var(--blue) solid 1px;
     background-color: #ffffff;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 5px;
     overflow: hidden;
     align-items: center;
   }
   
   .share .share-container p{
-    font-size: 1.5rem;
+    font-size: 15px;
     width: 90%;
   }
   
@@ -179,24 +179,30 @@ header .navbar i:hover{
     right: 0;
     height: 100%;
     width: 20%;
-    background-color: var(--green);
-    color: var(--light-yellow);
+    background-color: var(--blue);
+    color: var(--dark);
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 15px;
   
   }
   .share .share-container button:hover{
     letter-spacing: .2rem;
-    background-color: var(--light-green);
+    background-color: var(--orange);
+    color: var(--white);
   }
-  
+
   .share #close-share{
     position: absolute;
-    color:var(--green);
+    color:var(--blue);
     font-size: 2.5rem;
     top: 2rem; right: 3rem;
     cursor: pointer;
+  }
+
+  .share #close-share:hover{
+    color: var(--orange);
+    transform: scale(1.2);
   }
 
 /*about*/
@@ -256,6 +262,9 @@ header .navbar i:hover{
 
 
 /*map*/
+.map{
+    background-color: var(--dark);
+}
 .map .backgrouond{
     width: 100%;
     position: absolute;
@@ -271,4 +280,75 @@ header .navbar i:hover{
 
 .map .mapimg img{
     width: 100%;
+}
+
+/*room*/
+.room .backgrouond{
+    width: 100%;
+    position: absolute;
+}
+
+.room .roomli{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    margin: 10px 50px 10px 10px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+
+.room .roomli .room1{
+    position: relative;
+    display: flex;
+    background-color: rgba(115,200,210,.25);
+    padding: 20px;
+    margin-bottom:10px ;
+    border-radius: 10px;
+}
+
+.room .roomli img{
+    width: 50%;
+    margin-right: 10px;
+}
+
+.room .roomli .intro{
+    margin-right: 10px;
+}
+
+.room .roomli h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.room .roomli h6{
+    font-size: 14px;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.room .roomli p{
+    font-size: 12px;
+    color: var(--white);
+    margin-right: 100px;
+}
+
+.room .roomli .price{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.room .roomli .score{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--white);
+    font-size: 20px;
 }
