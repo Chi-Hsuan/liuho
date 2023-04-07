@@ -583,6 +583,12 @@ header .icon #menu-bars{
         border-radius: 10px;
     }
 
+
+    /*home*/
+    .home .homelogo{
+        right: 10%;
+    }
+    
     /*Share*/
     .share{
         width: 350px;
