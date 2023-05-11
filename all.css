@@ -476,7 +476,7 @@ header .icon #menu-bars{
 .comment .comment-container .commentli{
     padding: 0 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 25px;
     /* padding: 15px;
     display: flex;
@@ -486,7 +486,7 @@ header .icon #menu-bars{
 
 .comment .comment-container .commentli .comment1{
     background-color: rgba(115,200,210,.25);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -499,6 +499,12 @@ header .icon #menu-bars{
 
 .comment .comment-container .commentli .comment1 img{
     width:30%;
+    padding: 2px;
+
+}
+
+.comment .comment-container .commentli .comment1 .content{
+    width: 60%;
 }
 
 .comment .comment-container .commentli .comment1 h5{
@@ -878,6 +884,14 @@ header .icon #menu-bars{
     }
     .comment .comment-container .commentli{
         padding: 0 1%;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    }    
+
+    .comment .comment-container .commentli .comment1{
+        padding: 3% 0;
     }
-    
+
+    .comment .comment-container .commentli .comment1 .content{
+        width: 50%;
+    }
 }
